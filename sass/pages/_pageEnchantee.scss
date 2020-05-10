@@ -1,0 +1,15 @@
+.container__menuEnchantee{ // STYLE PAGE MENU ENCHANTEE
+    background-color:$bg-menu-enchantee;
+    color: $color-menu-enchantee;
+    h2{
+        font-size: map-get($font-size, headingEnchantee);
+        font-family: 'Satisfy', cursive;;
+        font-weight: $dark-font;
+    }
+    h3{
+        font-family: $font-kalam;
+    }
+    li{
+        font-family: $font-kalam;
+    }
+}

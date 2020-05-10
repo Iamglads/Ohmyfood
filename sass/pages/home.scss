@@ -1,0 +1,82 @@
+
+.section__menu{
+    &--bloc{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    &--enchantee{
+        @include menu__style;
+        background-color: $bg-menu-enchantee;
+        color: $color-menu-enchantee;
+        h2{
+            font-family: $font-kalam;
+            font-weight: $dark-font;
+        }
+        a{  
+            @extend %zoom_animation;
+        }
+        p{
+            font-family: 'Satisfy', cursive;
+            font-weight: $dark-font;
+        }
+    }
+
+    &--chic{
+        @include menu__style;
+        background-color: $bg-menu-chic;
+        h2{
+            color: $color-menu-chic;
+            font-weight: $dark-font;
+        }
+        p{
+            font-family: 'Croissant One', cursive;
+            background:linear-gradient(to right, $color-menu-chic, #673AB7);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            
+        }
+        a{  
+            @extend %zoom_animation;
+        }
+    }
+      
+    &--papilles{
+        @include menu__style;
+        background-color: $bg-menu-papilles;
+        h2{
+            color: $color-menu-papilles;
+            font-family: $font-kalam;
+        }
+        p{
+            font-family: 'Dancing Script', cursive;
+            background:linear-gradient(to right, #3F51B5, $color-menu-papilles);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+
+        }
+        a{  
+            @extend %zoom_animation;
+        }
+    }
+    
+    &--palette{
+        @include menu__style;
+        background-color: $bg-menu-palette;
+        h2{
+            color: $color-menu-palette;
+            font-family: $font-kalam;
+        }
+        p{
+            font-family: 'Kaushan Script', cursive;
+            background:linear-gradient(to right, $color-menu-palette, #C8E6C9);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+        a{  
+            @extend %zoom_animation;
+        }
+
+    }
+    
+}

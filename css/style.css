@@ -1,0 +1,319 @@
+.section__menu--palette a, .section__menu--papilles a, .section__menu--chic a, .section__menu--enchantee a {
+  transform: scale(1);
+  transition: transform;
+  transition-duration: 400ms;
+  animation-timing-function: ease-in-out;
+}
+.section__menu--palette a:hover, .section__menu--papilles a:hover, .section__menu--chic a:hover, .section__menu--enchantee a:hover {
+  transform: scale(1.2);
+  opacity: 0.4;
+}
+
+.footer__contactUs, .footer__legalNotice {
+  color: #fbc02d;
+  font-size: 18px;
+  animation: move__animation__footer 1000ms ease-in-out;
+  -moz-animation: move__animation__footer 1000ms ease-in-out;
+  -webkit-animation: move__animation__footer 1000ms ease-in-out;
+}
+.footer__contactUs:hover, .footer__legalNotice:hover {
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: content-box;
+}
+
+a {
+  text-decoration: none;
+  text-transform: none;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #00897b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+header h1 {
+  font-size: 2em;
+  color: #fbc02d;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.section__menu--bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__menu--enchantee {
+  width: 200px;
+  height: 300px;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  box-shadow: 2px 2px 2px rgba(175, 172, 172, 0.931);
+  background-color: rgba(255, 205, 210, 0.8);
+  color: #330000;
+}
+.section__menu--enchantee h2 {
+  font-family: "Kalam", cursive;
+  font-weight: 800;
+}
+.section__menu--enchantee p {
+  font-family: "Satisfy", cursive;
+  font-weight: 800;
+}
+.section__menu--chic {
+  width: 200px;
+  height: 300px;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  box-shadow: 2px 2px 2px rgba(175, 172, 172, 0.931);
+  background-color: rgba(243, 229, 245, 0.5);
+}
+.section__menu--chic h2 {
+  color: #ff9800;
+  font-weight: 800;
+}
+.section__menu--chic p {
+  font-family: "Croissant One", cursive;
+  background: linear-gradient(to right, #ff9800, #673AB7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.section__menu--papilles {
+  width: 200px;
+  height: 300px;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  box-shadow: 2px 2px 2px rgba(175, 172, 172, 0.931);
+  background-color: rgba(227, 242, 253, 0.3);
+}
+.section__menu--papilles h2 {
+  color: #2196f3;
+  font-family: "Kalam", cursive;
+}
+.section__menu--papilles p {
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to right, #3F51B5, #2196f3);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.section__menu--palette {
+  width: 200px;
+  height: 300px;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  box-shadow: 2px 2px 2px rgba(175, 172, 172, 0.931);
+  background-color: rgba(232, 245, 233, 0.3);
+}
+.section__menu--palette h2 {
+  color: #4caf50;
+  font-family: "Kalam", cursive;
+}
+.section__menu--palette p {
+  font-family: "Kaushan Script", cursive;
+  background: linear-gradient(to right, #4caf50, #C8E6C9);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.section__soon {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 50px;
+}
+.section__soon--div {
+  width: 20%;
+  height: auto;
+  background-color: #00897b;
+  color: #fbc02d;
+  font-size: 1.3rem;
+  padding: 0.2em;
+  border-radius: 20px;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  padding: 5em;
+  box-shadow: 1px 1px grey;
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px rgba(175, 172, 172, 0.931);
+}
+.container h3 {
+  padding: 1em;
+  font-size: 14px;
+}
+.container li {
+  padding: 0.5em;
+  list-style: none;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__menuChic {
+  background-color: rgba(243, 229, 245, 0.5);
+  font-family: "Times New Roman", Times, sans-serif;
+}
+.container__menuChic h2 {
+  font-size: 2rem;
+  font-family: "Croissant One", cursive;
+  background: linear-gradient(to right, #ff9800, #673AB7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.container__menuChic .first-heading, .container__menuChic .first-block {
+  color: #FFB74D;
+}
+.container__menuChic .second-heading, .container__menuChic .second-block {
+  color: #a078a7;
+}
+.container__menuChic .third-heading, .container__menuChic .third-block {
+  color: rgba(82, 45, 168, 0.575);
+}
+
+.container__menuEnchantee {
+  background-color: rgba(255, 205, 210, 0.8);
+  color: #330000;
+}
+.container__menuEnchantee h2 {
+  font-size: 3rem;
+  font-family: "Satisfy", cursive;
+  font-weight: 800;
+}
+.container__menuEnchantee h3 {
+  font-family: "Kalam", cursive;
+}
+.container__menuEnchantee li {
+  font-family: "Kalam", cursive;
+}
+
+.container__menuPapilles {
+  background-color: rgba(227, 242, 253, 0.3);
+}
+.container__menuPapilles h2 {
+  font-size: 4em;
+  color: #2196f3;
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to right, #3F51B5, #2196f3);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.container__menuPapilles h3 {
+  font-family: "Kalam", cursive;
+}
+.container__menuPapilles li {
+  font-family: "Kalam", cursive;
+}
+
+.container__menuPalette {
+  background-color: rgba(232, 245, 233, 0.3);
+}
+.container__menuPalette h2 {
+  font-family: "Kaushan Script", cursive;
+  background-image: linear-gradient(to right, #4caf50, #C8E6C9);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.container__menuPalette h3 {
+  font-family: "Kalam", cursive;
+}
+.container__menuPalette li {
+  font-family: "Kalam", cursive;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: #00897b;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@keyframes move__animation__footer {
+  5%, 100% {
+    transform: translate3d(-1px, 0, 0);
+    -moz-transform: translate3d(-1px, 0, 0);
+    -webkit-transform: translate3d(-1px, 0, 0);
+  }
+  15%, 90% {
+    transform: translate3d(1px, 0, 0);
+    -moz-transform: translate3d(1px, 0, 0);
+    -webkit-transform: translate3d(1px, 0, 0);
+  }
+  25%, 80% {
+    transform: translate3d(-2px, 0, 0);
+    -moz-transform: translate3d(-2px, 0, 0);
+    -webkit-transform: translate3d(-2px, 0, 0);
+  }
+  35%, 70% {
+    transform: translate3d(2px, 0, 0);
+    -moz-transform: translate3d(2px, 0, 0);
+    -webkit-transform: translate3d(2px, 0, 0);
+  }
+  45%, 60% {
+    transform: translate3d(-3px, 0, 0);
+    -moz-transform: translate3d(-3px, 0, 0);
+    -webkit-transform: translate3d(-3px, 0, 0);
+  }
+  55%, 50% {
+    transform: translate3d(3px, 0, 0);
+    -moz-transform: translate3d(3px, 0, 0);
+    -webkit-transform: translate3d(3px, 0, 0);
+  }
+}
+/* Extra small devices (portrait phones, less than 576px*/
+@media (max-width: 575.98px) {
+  .section__menu--bloc {
+    display: block;
+  }
+  .section__menu .section__menu--chic, .section__menu .section__menu--enchantee, .section__menu .section__menu--palette, .section__menu .section__menu--papilles {
+    width: 90%;
+    height: 120px;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    padding: auto;
+  }
+  .container li {
+    display: block;
+    justify-content: center;
+  }
+}
+/* Small devices (landscape phones, 576px and up)*/
+/* Medium devices (tablets, 768px and up)*/
+/* Large devices (desktops, 992px and up)*/
+/* Extra large devices (large desktops, 1200px and up)*/
+
+/*# sourceMappingURL=style.css.map */
