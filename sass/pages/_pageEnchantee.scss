@@ -1,15 +1,24 @@
-.container__menuEnchantee{ // STYLE PAGE MENU ENCHANTEE
-    background-color:$bg-menu-enchantee;
-    color: $color-menu-enchantee;
-    h2{
-        font-size: map-get($font-size, headingEnchantee);
-        font-family: 'Satisfy', cursive;;
-        font-weight: $dark-font;
-    }
-    h3{
-        font-family: $font-kalam;
-    }
-    li{
-        font-family: $font-kalam;
+.container{
+    display: flex;
+    justify-content: center;
+    &__menuEnchantee{ // STYLE PAGE MENU ENCHANTEE
+        background-color:$bg-menu-enchantee;
+        color: $color-menu-enchantee;
+        @include stylePages__menu;
+        h2{
+            font-size: map-get($font-size, headingEnchantee);
+            font-family: 'Satisfy', cursive;;
+            font-weight: $dark-font;
+            @include forMobile{
+                font-size: 25px;
+            }
+        }
+        h3{
+            font-family: $font-kalam;
+        }
+        li{
+            font-family: $font-kalam;
+            @include stylePages__li;
+        }
     }
 }

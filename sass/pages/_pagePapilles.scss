@@ -1,17 +1,26 @@
-.container__menuPapilles{ // STYLE MENU DELICES DES PAPILLES
-    background-color:$bg-menu-papilles;
-    h2{
-        font-size: 4em;
-        color: $color-menu-papilles;
-        font-family: 'Dancing Script', cursive;
-        background:linear-gradient(to right, #3F51B5, $color-menu-papilles);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    }
-    h3{
-        font-family: 'Kalam', cursive;
-    }
-    li{
-        font-family: 'Kalam', cursive;
+.container{
+    display: flex;
+    justify-content: center;
+    &__menuPapilles{ // STYLE MENU DELICES DES PAPILLES
+        @include stylePages__menu;
+        background-color:$bg-menu-papilles;
+        h2{
+            font-size: 4em;
+            color: $color-menu-papilles;
+            font-family: 'Dancing Script', cursive;
+            background:linear-gradient(to right, #3F51B5, $color-menu-papilles);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            @include forMobile{
+                font-size: 2em;
+            }
+        }
+        h3{
+            font-family: 'Kalam', cursive;
+        }
+        li{
+            @include stylePages__li;
+            font-family: 'Kalam', cursive;
+        }
     }
 }

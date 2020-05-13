@@ -1,14 +1,15 @@
 @import "sass/utils/variables";
 @import "sass/utils/extension";
+@import "sass/utils/animations";
+
 
 @import "sass/base/typography";
 
 @import "sass/layout/header";
 @import "sass/pages/home";
-@import "sass/components/sectionSoon";
 
 
-@import "sass/layout/container";
+// STYLE FOR EACH PAGE
 @import "sass/pages/pageChic";
 @import "sass/pages/pageEnchantee";
 @import "sass/pages/pagePapilles";
@@ -16,5 +17,3 @@
 
 
 @import "sass/layout/footer";
-
-@import "responsive.scss"

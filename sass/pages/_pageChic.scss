@@ -1,22 +1,31 @@
-.container__menuChic{
-    background-color:$bg-menu-chic;
-    font-family: 'Times New Roman', Times, sans-serif;
+.container{
+    display: flex;
+    justify-content: center;
+    .container__menuChic{
+        @include stylePages__menu;
+        background-color:$bg-menu-chic;
+        font-family: 'Times New Roman', Times, sans-serif;
+        
+        h2{
+            font-size: map-get($font-size, headingChic);
+            font-family: 'Croissant One', cursive;
+            background:linear-gradient(to right, $color-menu-chic, #673AB7);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
     
-    h2{
-        font-size: map-get($font-size, headingChic);
-        font-family: 'Croissant One', cursive;
-        background:linear-gradient(to right, $color-menu-chic, #673AB7);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    }
+        .first-heading, .first-block{
+          color: #FFB74D;
+        }
+        .second-heading, .second-block{
+            color: rgb(160, 120, 167);
+        }
+        .third-heading, .third-block{
+            color: rgba(82, 45, 168, 0.575);
+        }
 
-    .first-heading, .first-block{
-      color: #FFB74D;
-    }
-    .second-heading, .second-block{
-        color: rgb(160, 120, 167);
-    }
-    .third-heading, .third-block{
-        color: rgba(82, 45, 168, 0.575);
+        li{
+            @include stylePages__li;
+        }
     }
 }

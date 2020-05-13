@@ -8,6 +8,12 @@ $bg-menu-chic:rgba(243,229,245 , 0.5);
 $color-menu-chic:rgb(255, 152, 0);
 $bg-menu-papilles:rgba(227,242,253 , 0.3);
 $color-menu-papilles:rgb(33, 150, 243);
-$dark-font:800;
+$dark-font:800 !important;
 $font-kalam: 'Kalam', cursive;
-$font-size:(logo:2rem, headingChic:2rem, headingEnchantee:3rem, headingPalette:4rem)
+$font-size:(logo:2rem, headingChic:2rem, headingEnchantee:3rem, headingPalette:4rem);
+
+
+
+$breakpoints: (
+    mobile: 599px
+);
