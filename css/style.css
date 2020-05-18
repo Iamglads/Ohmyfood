@@ -29,8 +29,16 @@ body {
   box-sizing: content-box;
 }
 
+ul {
+  padding: 0;
+}
+
 li {
   list-style: none;
+}
+
+span {
+  font-weight: bold;
 }
 
 a {
@@ -99,6 +107,11 @@ header h1 {
   font-size: 0.8em;
   font-family: "Croissant One", cursive;
   background: linear-gradient(to right, #ff9800, #673AB7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.section__menu--chic .fas .fa-music {
+  background: linear-gradient(to right #FF5722, #FF9800);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -191,7 +204,7 @@ header h1 {
 }
 @media screen and (max-width: 599px) {
   .container .container__menuChic {
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 0;
   }
@@ -203,8 +216,17 @@ header h1 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+.container .container__menuChic .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .container__menuChic .title .img-title {
+  width: 30%;
+  height: 25px;
+}
 .container .container__menuChic .first-heading, .container .container__menuChic .first-block {
-  color: #FFB74D;
+  color: #b95909;
 }
 .container .container__menuChic .second-heading, .container .container__menuChic .second-block {
   color: #a078a7;
@@ -217,7 +239,7 @@ header h1 {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
   .container .container__menuChic li {
     display: block;
     text-align: center;
@@ -242,7 +264,7 @@ header h1 {
 }
 @media screen and (max-width: 599px) {
   .container__menuEnchantee {
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 0;
   }
@@ -257,6 +279,15 @@ header h1 {
     font-size: 25px;
   }
 }
+.container__menuEnchantee .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__menuEnchantee .title .img-title {
+  width: 30%;
+  height: 25px;
+}
 .container__menuEnchantee h3 {
   font-family: "Kalam", cursive;
 }
@@ -266,7 +297,7 @@ header h1 {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
   .container__menuEnchantee li {
     display: block;
     text-align: center;
@@ -290,7 +321,7 @@ header h1 {
 }
 @media screen and (max-width: 599px) {
   .container__menuPapilles {
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 0;
   }
@@ -308,6 +339,15 @@ header h1 {
     font-size: 2em;
   }
 }
+.container__menuPapilles .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__menuPapilles .title .img-title {
+  width: 30%;
+  height: 25px;
+}
 .container__menuPapilles h3 {
   font-family: "Kalam", cursive;
 }
@@ -317,7 +357,7 @@ header h1 {
   align-items: center;
   font-family: "Kalam", cursive;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
   .container__menuPapilles li {
     display: block;
     text-align: center;
@@ -341,7 +381,7 @@ header h1 {
 }
 @media screen and (max-width: 599px) {
   .container__menuPalette {
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 0;
   }
@@ -352,6 +392,15 @@ header h1 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+.container__menuPalette .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__menuPalette .title .img-title {
+  width: 30%;
+  height: 25px;
+}
 .container__menuPalette h3 {
   font-family: "Kalam", cursive;
 }
@@ -361,7 +410,7 @@ header h1 {
   align-items: center;
   font-family: "Kalam", cursive;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
   .container__menuPalette li {
     display: block;
     text-align: center;
