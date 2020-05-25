@@ -17,7 +17,7 @@
             @extend %zoom_animation;
         }
         p{
-            font-family: 'Satisfy', cursive;
+            font-family: $devonshire;
             font-weight: $dark-font;
         }
     }
@@ -40,18 +40,23 @@
         a{  
             @extend %zoom_animation;
         }
+        .fas .fa-music{
+            background: linear-gradient(to right #FF5722, #FF9800);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
     }
       
     &--papilles{
         @include menu__style;
         background-color: $bg-menu-papilles;
         h2{
-            color: $color-menu-papilles;
+            color: $color-menu-papilles-2;
             font-family: $font-kalam;
         }
         p{
             font-family: 'Dancing Script', cursive;
-            background:linear-gradient(to right, #3F51B5, $color-menu-papilles);
+            background:linear-gradient(to right, $color-menu-papilles, $color-menu-papilles-2);
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
 
@@ -96,20 +101,33 @@
 /*---------SECTION PROCHAINEMENT--------*/
 .section__soon{
     width: 100%;
-    height: 100px;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     &--div{
         width: 240px;
-        height: auto;
+        height: 50px;
         background-color: $main-color;
         color: $second-color;
-        font-size: 1.3rem;
-        padding: 0.2em;
-        border-radius: 20px;
+        font-size: 1.5rem;
+        border-radius: 10px;    
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        align-self: center;
     }
-    
+    .animation__point-one{
+       @extend %soon__animation-one;
+    }
+    .animation__point-two{
+        @extend %soon__animation-two;
+     }
+     .animation__point-three{
+        @extend %soon__animation-three;
+     }
+   
 }
+    

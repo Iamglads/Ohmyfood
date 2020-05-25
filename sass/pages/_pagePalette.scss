@@ -11,15 +11,26 @@
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
         }
-        h3{
-            font-family:$font-kalam; 
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .img-title{
+                width: 30%;
+                height: 25px;
+            }
         }
-    
+        .heading-three-palette{
+            font-family:$font-kalam; 
+            &::after{
+                @extend %border-bottom-animation;
+                border-bottom: 2px solid $color-menu-palette;
+            }
+        }
         li{ 
             @include stylePages__li;
             font-family: $font-kalam;
         }
-    
         
     }
 }

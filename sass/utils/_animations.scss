@@ -22,3 +22,95 @@
         -moz-animation-iteration-count: infinite;
     }
 }
+@keyframes move__animation__footer {
+  5%, 100% {
+       transform: translate3d(-1px, 0, 0);
+      -moz-transform: translate3d(-1px, 0, 0);
+    -webkit-transform: translate3d(-1px, 0, 0);
+  }
+  15%, 90% {
+    transform: translate3d(1px, 0, 0);
+    -moz-transform: translate3d(1px, 0, 0);
+    -webkit-transform: translate3d(1px, 0, 0);
+
+  }
+  25%, 80% {
+    transform: translate3d(-2px, 0, 0);
+    -moz-transform: translate3d(-2px, 0, 0);
+    -webkit-transform: translate3d(-2px, 0, 0);
+  }
+  35%, 70% {
+    transform: translate3d(2px, 0, 0);
+    -moz-transform: translate3d(2px, 0, 0);
+    -webkit-transform: translate3d(2px, 0, 0);
+
+  }
+  45%, 60% {
+      transform: translate3d(-3px, 0, 0);
+      -moz-transform: translate3d(-3px, 0, 0);
+      -webkit-transform: translate3d(-3px, 0, 0);
+  }
+  55%, 50% {
+      transform: translate3d(3px, 0, 0);
+      -moz-transform: translate3d(3px, 0, 0);
+      -webkit-transform: translate3d(3px, 0, 0);
+  }
+}
+
+%soon__animation-one{
+  animation: one 1000ms ease-in 100ms infinite;
+  }
+  
+  @keyframes one{
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+%soon__animation-two{
+  animation: two 1000ms ease-in 400ms infinite;
+}
+
+@keyframes two{
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+%soon__animation-three{
+  animation: three 1000ms ease-in 700ms infinite;
+}
+
+@keyframes three{
+  from {
+    opacity:1; 
+  }
+  to {
+    opacity:0;
+  }
+}
+  
+
+%border-bottom-animation{
+    &::after{
+      content: '';
+      width: auto;
+      height: 2px;
+      display:block;
+      transform: scaleX(0);
+      transition: 400ms;
+      transform-origin: 0%;
+      transition-timing-function: ease-out;
+    }
+    &:hover{
+      &::after{
+      transform: scaleX(1)
+      }
+    }
+}

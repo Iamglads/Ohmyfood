@@ -13,17 +13,44 @@
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
         }
+
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .img-title{
+                width: 30%;
+                height: 25px;
+            }
+        }
     
         .first-heading, .first-block{
-          color: #FFB74D;
+          color:$color-menu-chic-1;
+        }
+        .first-heading{
+            &::after{
+                @extend %border-bottom-animation;
+                border-bottom: 2px solid $color-menu-chic-1;
+            }
         }
         .second-heading, .second-block{
-            color: rgb(160, 120, 167);
+            color: $color-menu-chic-2;
+        }
+        .second-heading{
+            &::after{
+                @extend %border-bottom-animation;
+                border-bottom: 2px solid $color-menu-chic-2;
+            }
         }
         .third-heading, .third-block{
-            color: rgba(82, 45, 168, 0.575);
+            color: $color-menu-chic-3;
         }
-
+        .third-heading{
+            &::after{
+                @extend %border-bottom-animation;
+                border-bottom: 2px solid $color-menu-chic-3;
+            }
+        }
         li{
             @include stylePages__li;
         }

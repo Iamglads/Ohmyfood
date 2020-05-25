@@ -7,14 +7,27 @@
         @include stylePages__menu;
         h2{
             font-size: map-get($font-size, headingEnchantee);
-            font-family: 'Satisfy', cursive;;
+            font-family: $devonshire;
             font-weight: $dark-font;
             @include forMobile{
                 font-size: 25px;
             }
         }
-        h3{
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .img-title{
+                width: 30%;
+                height: 25px;
+            }
+        }
+        .heading-three{
             font-family: $font-kalam;
+            &::after{
+                @extend %border-bottom-animation;
+                border-bottom: 2px solid $color-menu-enchantee;
+            }
         }
         li{
             font-family: $font-kalam;

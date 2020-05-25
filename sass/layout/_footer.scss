@@ -5,48 +5,14 @@
     position: fixed;
     bottom:0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     &__legalNotice {
         @extend %move_animation;
+        margin: 5px;
     }
     &__contactUs{
         @extend %move_animation;
+        margin: 5px;
     }
 }
-
-
-@keyframes move__animation__footer {
-    5%, 100% {
-         transform: translate3d(-1px, 0, 0);
-        -moz-transform: translate3d(-1px, 0, 0);
-      -webkit-transform: translate3d(-1px, 0, 0);
-    }
-    15%, 90% {
-      transform: translate3d(1px, 0, 0);
-      -moz-transform: translate3d(1px, 0, 0);
-      -webkit-transform: translate3d(1px, 0, 0);
-
-    }
-    25%, 80% {
-      transform: translate3d(-2px, 0, 0);
-      -moz-transform: translate3d(-2px, 0, 0);
-      -webkit-transform: translate3d(-2px, 0, 0);
-    }
-    35%, 70% {
-      transform: translate3d(2px, 0, 0);
-      -moz-transform: translate3d(2px, 0, 0);
-      -webkit-transform: translate3d(2px, 0, 0);
-
-    }
-    45%, 60% {
-        transform: translate3d(-3px, 0, 0);
-        -moz-transform: translate3d(-3px, 0, 0);
-        -webkit-transform: translate3d(-3px, 0, 0);
-    }
-    55%, 50% {
-        transform: translate3d(3px, 0, 0);
-        -moz-transform: translate3d(3px, 0, 0);
-        -webkit-transform: translate3d(3px, 0, 0);
-    }
-  }
