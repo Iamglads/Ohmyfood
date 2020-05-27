@@ -19,7 +19,7 @@
     justify-content: center;
     align-items: center;
     align-self: center;
-    box-shadow: 1px 2px 1px 1px  rgba(175, 172, 172, 0.931); 
+    box-shadow: 1px 1px 1px 1px #afacaced; 
 }
 
 @mixin stylePages__menu {
@@ -34,13 +34,17 @@
             height: auto; 
             padding: 0;          
     }
+    @include forTablet(){
+        width: 90%;
+        padding: 0;
+    }
 }
 
 @mixin stylePages__li {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    @include forTablet() {
+    @include forTablet(){
             display: block;
             text-align: center;
             width: 100%;

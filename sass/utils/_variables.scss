@@ -21,11 +21,14 @@ $color-menu-papilles-2:rgb(43, 158, 245);
 $dark-font:800 !important;
 $font-kalam: 'Kalam', cursive;
 $devonshire:  'Devonshire', cursive;
-$font-size:(logo:2rem, headingChic:2rem, headingEnchantee:3rem, headingPalette:4rem);
-
-
+$font-size:(
+    logo:2rem, 
+    headingChic:2rem, 
+    headingEnchantee:3rem, 
+    headingPalette:4rem
+    );
 
 $breakpoints: (
     mobile: 599px,
-    tablette:768px
+    tablette:850px
 );

@@ -26,7 +26,7 @@
   5%, 100% {
        transform: translate3d(-1px, 0, 0);
       -moz-transform: translate3d(-1px, 0, 0);
-    -webkit-transform: translate3d(-1px, 0, 0);
+      -webkit-transform: translate3d(-1px, 0, 0);
   }
   15%, 90% {
     transform: translate3d(1px, 0, 0);
@@ -59,6 +59,8 @@
 
 %soon__animation-one{
   animation: one 1000ms ease-in 100ms infinite;
+  -webkit-animation: one 1000ms ease-in 100ms infinite;
+  -moz-animation: one 1000ms ease-in 100ms infinite;
   }
   
   @keyframes one{
@@ -72,6 +74,8 @@
 
 %soon__animation-two{
   animation: two 1000ms ease-in 400ms infinite;
+  -webkit-animation: two 1000ms ease-in 400ms infinite;
+  -moz-animation: two 1000ms ease-in 400ms infinite;
 }
 
 @keyframes two{
@@ -85,6 +89,8 @@
 
 %soon__animation-three{
   animation: three 1000ms ease-in 700ms infinite;
+  -webkit-animation: three 1000ms ease-in 700ms infinite;
+  -moz-animation: three 1000ms ease-in 700ms infinite;
 }
 
 @keyframes three{

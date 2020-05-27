@@ -56,6 +56,8 @@
 }
 .section__soon .animation__point-one {
   animation: one 1000ms ease-in 100ms infinite;
+  -webkit-animation: one 1000ms ease-in 100ms infinite;
+  -moz-animation: one 1000ms ease-in 100ms infinite;
 }
 
 @keyframes one {
@@ -68,6 +70,8 @@
 }
 .section__soon .animation__point-two {
   animation: two 1000ms ease-in 400ms infinite;
+  -webkit-animation: two 1000ms ease-in 400ms infinite;
+  -moz-animation: two 1000ms ease-in 400ms infinite;
 }
 
 @keyframes two {
@@ -80,6 +84,8 @@
 }
 .section__soon .animation__point-three {
   animation: three 1000ms ease-in 700ms infinite;
+  -webkit-animation: three 1000ms ease-in 700ms infinite;
+  -moz-animation: three 1000ms ease-in 700ms infinite;
 }
 
 @keyframes three {
@@ -130,6 +136,12 @@ a {
   color: unset;
 }
 
+.fa-music {
+  background-image: linear-gradient(to right, #c86817, #FF9800);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -159,7 +171,7 @@ header h1 {
   justify-content: center;
   align-items: center;
   align-self: center;
-  box-shadow: 1px 2px 1px 1px rgba(175, 172, 172, 0.931);
+  box-shadow: 1px 1px 1px 1px #afacaced;
   background-color: rgba(255, 205, 210, 0.8);
   color: #330000;
 }
@@ -179,7 +191,7 @@ header h1 {
   justify-content: center;
   align-items: center;
   align-self: center;
-  box-shadow: 1px 2px 1px 1px rgba(175, 172, 172, 0.931);
+  box-shadow: 1px 1px 1px 1px #afacaced;
   background-color: rgba(243, 229, 245, 0.5);
 }
 .section__menu--chic h2 {
@@ -193,11 +205,6 @@ header h1 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.section__menu--chic .fas .fa-music {
-  background: linear-gradient(to right #FF5722, #FF9800);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
 .section__menu--papilles {
   width: 200px;
   height: 300px;
@@ -206,7 +213,7 @@ header h1 {
   justify-content: center;
   align-items: center;
   align-self: center;
-  box-shadow: 1px 2px 1px 1px rgba(175, 172, 172, 0.931);
+  box-shadow: 1px 1px 1px 1px #afacaced;
   background-color: rgba(227, 242, 253, 0.3);
 }
 .section__menu--papilles h2 {
@@ -227,7 +234,7 @@ header h1 {
   justify-content: center;
   align-items: center;
   align-self: center;
-  box-shadow: 1px 2px 1px 1px rgba(175, 172, 172, 0.931);
+  box-shadow: 1px 1px 1px 1px #afacaced;
   background-color: rgba(232, 245, 233, 0.3);
 }
 .section__menu--palette h2 {
@@ -294,6 +301,12 @@ header h1 {
     padding: 0;
   }
 }
+@media screen and (max-width: 850px) {
+  .container .container__menuChic {
+    width: 90%;
+    padding: 0;
+  }
+}
 .container .container__menuChic h2 {
   font-size: 2rem;
   font-family: "Croissant One", cursive;
@@ -333,7 +346,7 @@ header h1 {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .container .container__menuChic li {
     display: block;
     text-align: center;
@@ -360,6 +373,12 @@ header h1 {
   .container__menuEnchantee {
     width: 90%;
     height: auto;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container__menuEnchantee {
+    width: 90%;
     padding: 0;
   }
 }
@@ -394,13 +413,18 @@ header h1 {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .container__menuEnchantee li {
     display: block;
     text-align: center;
     width: 100%;
     height: auto;
   }
+}
+.container__menuEnchantee .div-fa-music {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .container {
@@ -420,6 +444,12 @@ header h1 {
   .container__menuPapilles {
     width: 90%;
     height: auto;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container__menuPapilles {
+    width: 90%;
     padding: 0;
   }
 }
@@ -463,7 +493,7 @@ header h1 {
   align-items: center;
   font-family: "Kalam", cursive;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .container__menuPapilles li {
     display: block;
     text-align: center;
@@ -489,6 +519,12 @@ header h1 {
   .container__menuPalette {
     width: 90%;
     height: auto;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container__menuPalette {
+    width: 90%;
     padding: 0;
   }
 }
@@ -519,7 +555,7 @@ header h1 {
   align-items: center;
   font-family: "Kalam", cursive;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .container__menuPalette li {
     display: block;
     text-align: center;

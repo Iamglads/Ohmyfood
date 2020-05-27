@@ -33,5 +33,11 @@
             font-family: $font-kalam;
             @include stylePages__li;
         }
+        .div-fa-music{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
     }
 }

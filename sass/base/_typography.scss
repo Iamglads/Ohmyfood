@@ -25,3 +25,9 @@ a{
     cursor: pointer;
     color:unset;
 }
+
+.fa-music{
+    background-image: linear-gradient(to right, $color-menu-chic, #FF9800);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}

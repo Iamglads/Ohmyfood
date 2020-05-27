@@ -40,11 +40,6 @@
         a{  
             @extend %zoom_animation;
         }
-        .fas .fa-music{
-            background: linear-gradient(to right #FF5722, #FF9800);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-        }
     }
       
     &--papilles{
