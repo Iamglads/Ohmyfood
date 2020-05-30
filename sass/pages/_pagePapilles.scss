@@ -1,6 +1,5 @@
 .container{
-    display: flex;
-    justify-content: center;
+    @extend %flex-justify-center;
     &__menuPapilles{ // STYLE MENU DELICES DES PAPILLES
         @include stylePages__menu;
         background-color:$bg-menu-papilles;
@@ -16,12 +15,9 @@
             }
         }
         .title{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @extend %flex-justify-space-between-align-center;
             .img-title{
-                width: 30%;
-                height: 25px;
+                @include size(30%, 25px);
             }
         }
         .heading-three-papilles-1, .heading-three-papilles-2, .heading-three-papilles-3{
@@ -46,8 +42,13 @@
             }
         }
         li{
-            @include stylePages__li;
+            @extend %flex-justify-space-between-align-center;
             font-family: 'Kalam', cursive;
+            @include forTablet{
+                display: block;
+                text-align: center;
+                @include size(100%, auto);
+            }
         }
     }
 }

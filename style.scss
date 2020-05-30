@@ -1,19 +1,24 @@
 @import "sass/utils/variables";
 @import "sass/utils/extension";
-@import "sass/utils/animations";
-
 
 @import "sass/base/typography";
-
+/*-----------------------------
+            ANIMATIONS
+------------------------------*/
+@import "sass/utils/animations";
+/*-----------------------------
+            ANIMATIONS END
+------------------------------*/
 @import "sass/layout/header";
 @import "sass/pages/home";
 
 
-// STYLE FOR EACH PAGE
 @import "sass/pages/pageChic";
 @import "sass/pages/pageEnchantee";
 @import "sass/pages/pagePapilles";
 @import "sass/pages/pagePalette";
 
-
+/*-----------------------------
+            FOOTER
+------------------------------*/
 @import "sass/layout/footer";

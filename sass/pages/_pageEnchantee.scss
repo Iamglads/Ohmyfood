@@ -1,6 +1,5 @@
 .container{
-    display: flex;
-    justify-content: center;
+   @extend %flex-justify-center;
     &__menuEnchantee{ // STYLE PAGE MENU ENCHANTEE
         background-color:$bg-menu-enchantee;
         color: $color-menu-enchantee;
@@ -14,12 +13,9 @@
             }
         }
         .title{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @extend %flex-justify-space-between-align-center;
             .img-title{
-                width: 30%;
-                height: 25px;
+                @include size(30%, 25px);
             }
         }
         .heading-three{
@@ -30,8 +26,13 @@
             }
         }
         li{
+            @extend %flex-justify-space-between-align-center;
             font-family: $font-kalam;
-            @include stylePages__li;
+            @include forTablet{
+                display: block;
+                text-align: center;
+                @include size(100%, auto);
+            }
         }
         .div-fa-music{
             display: flex;

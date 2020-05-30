@@ -1,12 +1,11 @@
 
 .section__menu{
     &--bloc{
-        display: flex;
-        justify-content: center;
-        align-items: center; 
+        @extend %flex-justify-align-center;
     }
     &--enchantee{
         @include menu__style;
+        @extend %flex-justify-align-center;
         background-color: $bg-menu-enchantee;
         color: $color-menu-enchantee;
         h2{
@@ -24,6 +23,7 @@
 
     &--chic{
         @include menu__style;
+        @extend %flex-justify-align-center;
         background-color: $bg-menu-chic;
         h2{
             color: $color-menu-chic;
@@ -44,6 +44,7 @@
       
     &--papilles{
         @include menu__style;
+        @extend %flex-justify-align-center;
         background-color: $bg-menu-papilles;
         h2{
             color: $color-menu-papilles-2;
@@ -63,6 +64,7 @@
     
     &--palette{
         @include menu__style;
+        @extend %flex-justify-align-center;
         background-color: $bg-menu-palette;
         h2{
             color: $color-menu-palette;
@@ -86,8 +88,7 @@
                 display: block;
             }
             &--chic, &--enchantee, &--palette, &--papilles{
-                width: 90%;
-                height: 160px;
+                @include size(90%, 160px);
             }
         }
     }
@@ -95,23 +96,17 @@
 
 /*---------SECTION PROCHAINEMENT--------*/
 .section__soon{
-    width: 100%;
-    height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include size(100%, 140px);
+    @extend %flex-justify-align-center;
     align-self: center;
     margin-bottom: 40px;
     &--div{
-        width: 240px;
-        height: 50px;
+        @include size(240px, 50px);
         background-color: $main-color;
         color: $second-color;
         font-size: 1.5rem;
         border-radius: 10px;    
-        display: flex; 
-        justify-content: center;
-        align-items: center;
+        @extend %flex-justify-align-center;
         align-self: center;
     }
     .animation__point-one{

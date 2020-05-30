@@ -1,15 +1,18 @@
 $main-color:rgb(66, 146, 125); // couleur principale le vert
 $second-color:rgb(255, 195, 78); // Couleur logo, text header 
 
-$bg-menu-enchantee:rgba(255,205,210 , 0.8);
+$bg-menu-enchantee:rgb(255, 218, 215);
 $color-menu-enchantee:rgb(51, 0, 0);
+
 $bg-menu-palette:rgba(232,245,233 ,0.3);
 $color-menu-palette:rgb(76, 175, 80);
+
 $bg-menu-chic:rgba(243,229,245 , 0.5);
 $color-menu-chic:rgb(200, 104, 23);
 $color-menu-chic-1:rgb(185, 89, 9);
 $color-menu-chic-2:rgb(160, 120, 167);
 $color-menu-chic-3:rgba(82, 45, 168, 0.575);
+
 $bg-menu-papilles:rgba(227,242,253 , 0.3);
 
 // Nuances bleu
@@ -21,6 +24,7 @@ $color-menu-papilles-2:rgb(43, 158, 245);
 $dark-font:800 !important;
 $font-kalam: 'Kalam', cursive;
 $devonshire:  'Devonshire', cursive;
+
 $font-size:(
     logo:2rem, 
     headingChic:2rem, 

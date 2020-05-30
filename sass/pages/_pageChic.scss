@@ -1,6 +1,5 @@
 .container{
-    display: flex;
-    justify-content: center;
+    @extend %flex-justify-center;
     .container__menuChic{
         @include stylePages__menu;
         background-color:$bg-menu-chic;
@@ -15,15 +14,11 @@
         }
 
         .title{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+           @extend %flex-justify-space-between-align-center;
             .img-title{
-                width: 30%;
-                height: 25px;
+                @include size(30%, 25px);
             }
         }
-    
         .first-heading, .first-block{
           color:$color-menu-chic-1;
         }
@@ -52,7 +47,12 @@
             }
         }
         li{
-            @include stylePages__li;
+            @extend %flex-justify-space-between-align-center;
+            @include forTablet{
+                display: block;
+                text-align: center;
+                @include size(100%, auto); 
+            }
         }
     }
 }

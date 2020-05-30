@@ -1,23 +1,19 @@
 .container{
-    display: flex;
-    justify-content: center;
+    @extend %flex-justify-center;
     &__menuPalette{ // STYLE PAGE MENU PALETTE DU GOUT
         @include stylePages__menu; 
         background-color:$bg-menu-palette;
         h2{
-            font-size: map-get($font-size, headingPalett );
+            font-size: map-get($font-size, headingPalette );
             font-family: 'Kaushan Script', cursive;
             background-image:linear-gradient(to right, $color-menu-palette, #C8E6C9);
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
         }
         .title{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @extend %flex-justify-space-between-align-center;
             .img-title{
-                width: 30%;
-                height: 25px;
+                @include size(30%, 25px);
             }
         }
         .heading-three-palette{
@@ -28,9 +24,13 @@
             }
         }
         li{ 
-            @include stylePages__li;
+            @extend %flex-justify-space-between-align-center;
             font-family: $font-kalam;
-        }
-        
+            @include forTablet{
+                display: block;
+                text-align: center;
+                @include size(100%, auto);
+            }
+        }    
     }
 }
