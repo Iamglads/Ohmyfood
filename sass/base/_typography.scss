@@ -26,7 +26,11 @@ a{
 }
 
 .fa-music{
+    color: unset;
     background-image: linear-gradient(to right, $color-menu-chic, #FF9800);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    @include forMobile{
+        display: none;
+    }
 }
