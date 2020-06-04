@@ -1,44 +1,44 @@
-.container{
-   @extend %flex-justify-center;
-    &__menuEnchantee{ // STYLE PAGE MENU ENCHANTEE
-        background-color:$bg-menu-enchantee;
-        color: $color-menu-enchantee;
-        @include stylePages__menu;
-        h2{
-            font-size: map-get($font-size, headingEnchantee);
-            font-family: $devonshire;
-            font-weight: $dark-font;
-            @include forMobile{
-                font-size: 25px;
-            }
-        }
-        .title{
-            @extend %flex-justify-space-between-align-center;
-            .img-title{
-                @include size(30%, 25px);
-            }
-        }
-        .heading-three{
-            font-family: $font-kalam;
-            &::after{
-                @extend %border-bottom-animation;
-                border-bottom: 2px solid $color-menu-enchantee;
-            }
-        }
-        li{
-            @extend %flex-justify-space-between-align-center;
-            font-family: $font-kalam;
-            @include forTablet{
-                display: block;
-                text-align: center;
-                @include size(100%, auto);
-            }
-        }
-        .div-fa-music{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-
-        }
+.container {
+  @extend %flex-justify-center;
+  &__menuEnchantee {
+    // STYLE PAGE MENU ENCHANTEE
+    background-color: $bg-menu-enchantee;
+    color: $color-menu-enchantee;
+    @include stylePages__menu;
+    h2 {
+      font-size: map-get($font-size, headingEnchantee);
+      font-family: $devonshire;
+      font-weight: $dark-font;
+      @include forMobile {
+        font-size: 25px;
+      }
     }
+    .title {
+      @extend %flex-justify-space-between-align-center;
+      .img-title {
+        @include size(30%, 25px);
+      }
+    }
+    .heading-three {
+      font-family: $font-kalam;
+      &::after {
+        @extend %border-bottom-animation;
+        border-bottom: 2px solid $color-menu-enchantee;
+      }
+    }
+    li {
+      @extend %flex-justify-space-between-align-center;
+      font-family: $font-kalam;
+      @include forTablet {
+        display: block;
+        text-align: center;
+        @include size(100%, auto);
+      }
+    }
+    .div-fa-music {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
 }

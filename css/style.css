@@ -43,7 +43,7 @@ a {
 
 .fa-music {
   color: unset;
-  background-image: linear-gradient(to right, #c86817, #FF9800);
+  background-image: linear-gradient(to right, #c86817, #ff9800);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -154,7 +154,9 @@ a {
     opacity: 0;
   }
 }
-.container__menuPalette .heading-three-palette::after, .container__menuPapilles .heading-three-papilles-1::after, .container__menuPapilles .heading-three-papilles-2::after, .container__menuPapilles .heading-three-papilles-3::after, .container__menuEnchantee .heading-three::after, .container .container__menuChic .third-heading::after, .container .container__menuChic .second-heading::after, .container .container__menuChic .first-heading::after {
+.container__menuPalette .heading-three-palette::after, .container__menuPapilles .heading-three-papilles-1::after,
+.container__menuPapilles .heading-three-papilles-2::after,
+.container__menuPapilles .heading-three-papilles-3::after, .container__menuEnchantee .heading-three::after, .container .container__menuChic .third-heading::after, .container .container__menuChic .second-heading::after, .container .container__menuChic .first-heading::after {
   content: "";
   width: auto;
   height: 2px;
@@ -164,7 +166,9 @@ a {
   transform-origin: 0%;
   transition-timing-function: ease-out;
 }
-.container__menuPalette .heading-three-palette:hover::after, .container__menuPapilles .heading-three-papilles-1:hover::after, .container__menuPapilles .heading-three-papilles-2:hover::after, .container__menuPapilles .heading-three-papilles-3:hover::after, .container__menuEnchantee .heading-three:hover::after, .container .container__menuChic .third-heading:hover::after, .container .container__menuChic .second-heading:hover::after, .container .container__menuChic .first-heading:hover::after {
+.container__menuPalette .heading-three-palette:hover::after, .container__menuPapilles .heading-three-papilles-1:hover::after,
+.container__menuPapilles .heading-three-papilles-2:hover::after,
+.container__menuPapilles .heading-three-papilles-3:hover::after, .container__menuEnchantee .heading-three:hover::after, .container .container__menuChic .third-heading:hover::after, .container .container__menuChic .second-heading:hover::after, .container .container__menuChic .first-heading:hover::after {
   transform: scaleX(1);
 }
 
@@ -307,7 +311,7 @@ header h1 {
 .container .container__menuChic h2 {
   font-size: 2rem;
   font-family: "Croissant One", cursive;
-  background: linear-gradient(to right, #c86817, #673AB7);
+  background: linear-gradient(to right, #c86817, #673ab7);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -315,19 +319,22 @@ header h1 {
   width: 30%;
   height: 25px;
 }
-.container .container__menuChic .first-heading, .container .container__menuChic .first-block {
+.container .container__menuChic .first-heading,
+.container .container__menuChic .first-block {
   color: #b95909;
 }
 .container .container__menuChic .first-heading::after {
   border-bottom: 2px solid #b95909;
 }
-.container .container__menuChic .second-heading, .container .container__menuChic .second-block {
+.container .container__menuChic .second-heading,
+.container .container__menuChic .second-block {
   color: #a078a7;
 }
 .container .container__menuChic .second-heading::after {
   border-bottom: 2px solid #a078a7;
 }
-.container .container__menuChic .third-heading, .container .container__menuChic .third-block {
+.container .container__menuChic .third-heading,
+.container .container__menuChic .third-block {
   color: rgba(82, 45, 168, 0.575);
 }
 .container .container__menuChic .third-heading::after {
@@ -439,7 +446,9 @@ header h1 {
   width: 30%;
   height: 25px;
 }
-.container__menuPapilles .heading-three-papilles-1, .container__menuPapilles .heading-three-papilles-2, .container__menuPapilles .heading-three-papilles-3 {
+.container__menuPapilles .heading-three-papilles-1,
+.container__menuPapilles .heading-three-papilles-2,
+.container__menuPapilles .heading-three-papilles-3 {
   font-family: "Kalam", cursive;
 }
 .container__menuPapilles .heading-three-papilles-1::after {
@@ -487,7 +496,7 @@ header h1 {
 .container__menuPalette h2 {
   font-size: 4rem;
   font-family: "Kaushan Script", cursive;
-  background-image: linear-gradient(to right, #4caf50, #C8E6C9);
+  background-image: linear-gradient(to right, #4caf50, #c8e6c9);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }

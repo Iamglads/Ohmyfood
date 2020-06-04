@@ -1,84 +1,73 @@
-%zoom_animation{
-    box-sizing: border-box;
-    transform: scale(1);
-    transition: transform 800ms;
-    animation-timing-function: ease-in-out;
-    &:hover{
-        transform: scale(1.15);
-        opacity: 0.5;
-    }
+%zoom_animation {
+  box-sizing: border-box;
+  transform: scale(1);
+  transition: transform 800ms;
+  animation-timing-function: ease-in-out;
+  &:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
 }
 
-
-%move_animation{ // Animation Contactez-nous
-    color: $second-color;
-    font-size: 18px;
-    animation: move__animation__footer 1000ms ease-in-out;
-    -moz-animation: move__animation__footer 1000ms ease-in-out;
-    -webkit-animation: move__animation__footer 1000ms ease-in-out;
-    &:hover{ 
-        animation-iteration-count: infinite;
-        -webkit-animation-iteration-count: infinite;
-        -moz-animation-iteration-count: infinite;
-    }
+%move_animation {
+  // Animation Contactez-nous
+  color: $second-color;
+  font-size: 18px;
+  animation: move__animation__footer 1000ms ease-in-out;
+  -moz-animation: move__animation__footer 1000ms ease-in-out;
+  -webkit-animation: move__animation__footer 1000ms ease-in-out;
+  &:hover {
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+  }
 }
 @keyframes move__animation__footer {
-  5%, 100% {
-       transform: translate3d(-1px, 0, 0);
-      -moz-transform: translate3d(-1px, 0, 0);
-      -webkit-transform: translate3d(-1px, 0, 0);
+  5%,
+  100% {
+    transform: translate3d(-1px, 0, 0);
+    -moz-transform: translate3d(-1px, 0, 0);
+    -webkit-transform: translate3d(-1px, 0, 0);
   }
-  15%, 90% {
+  15%,
+  90% {
     transform: translate3d(1px, 0, 0);
     -moz-transform: translate3d(1px, 0, 0);
     -webkit-transform: translate3d(1px, 0, 0);
-
   }
-  25%, 80% {
+  25%,
+  80% {
     transform: translate3d(-2px, 0, 0);
     -moz-transform: translate3d(-2px, 0, 0);
     -webkit-transform: translate3d(-2px, 0, 0);
   }
-  35%, 70% {
+  35%,
+  70% {
     transform: translate3d(2px, 0, 0);
     -moz-transform: translate3d(2px, 0, 0);
     -webkit-transform: translate3d(2px, 0, 0);
-
   }
-  45%, 60% {
-      transform: translate3d(-3px, 0, 0);
-      -moz-transform: translate3d(-3px, 0, 0);
-      -webkit-transform: translate3d(-3px, 0, 0);
+  45%,
+  60% {
+    transform: translate3d(-3px, 0, 0);
+    -moz-transform: translate3d(-3px, 0, 0);
+    -webkit-transform: translate3d(-3px, 0, 0);
   }
-  55%, 50% {
-      transform: translate3d(3px, 0, 0);
-      -moz-transform: translate3d(3px, 0, 0);
-      -webkit-transform: translate3d(3px, 0, 0);
+  55%,
+  50% {
+    transform: translate3d(3px, 0, 0);
+    -moz-transform: translate3d(3px, 0, 0);
+    -webkit-transform: translate3d(3px, 0, 0);
   }
 }
 
-%soon__animation-one{
+%soon__animation-one {
   animation: one 1000ms ease-in 100ms infinite;
   -webkit-animation: one 1000ms ease-in 100ms infinite;
   -moz-animation: one 1000ms ease-in 100ms infinite;
-  }
-  
-  @keyframes one{
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-
-%soon__animation-two{
-  animation: two 1000ms ease-in 400ms infinite;
-  -webkit-animation: two 1000ms ease-in 400ms infinite;
-  -moz-animation: two 1000ms ease-in 400ms infinite;
 }
 
-@keyframes two{
+@keyframes one {
   from {
     opacity: 1;
   }
@@ -87,36 +76,50 @@
   }
 }
 
-%soon__animation-three{
+%soon__animation-two {
+  animation: two 1000ms ease-in 400ms infinite;
+  -webkit-animation: two 1000ms ease-in 400ms infinite;
+  -moz-animation: two 1000ms ease-in 400ms infinite;
+}
+
+@keyframes two {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+%soon__animation-three {
   animation: three 1000ms ease-in 700ms infinite;
   -webkit-animation: three 1000ms ease-in 700ms infinite;
   -moz-animation: three 1000ms ease-in 700ms infinite;
 }
 
-@keyframes three{
+@keyframes three {
   from {
-    opacity:1; 
+    opacity: 1;
   }
   to {
-    opacity:0;
+    opacity: 0;
   }
 }
-  
 
-%border-bottom-animation{
-    &::after{
-      content: '';
-      width: auto;
-      height: 2px;
-      display:block;
-      transform: scaleX(0);
-      transition: 400ms;
-      transform-origin: 0%;
-      transition-timing-function: ease-out;
+%border-bottom-animation {
+  &::after {
+    content: "";
+    width: auto;
+    height: 2px;
+    display: block;
+    transform: scaleX(0);
+    transition: 400ms;
+    transform-origin: 0%;
+    transition-timing-function: ease-out;
+  }
+  &:hover {
+    &::after {
+      transform: scaleX(1);
     }
-    &:hover{
-      &::after{
-      transform: scaleX(1)
-      }
-    }
+  }
 }

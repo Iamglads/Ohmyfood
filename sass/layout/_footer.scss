@@ -1,15 +1,15 @@
-.footer{
-    @include size(100%, 50px);
-    background-color: $main-color;
-    position: fixed;
-    bottom:0;
-    @extend %flex-justify-space-between-align-center;
-    &__legalNotice {
-        @extend %move_animation;
-        margin: 5px;
-    }
-    &__contactUs{
-        @extend %move_animation;
-        margin: 5px;
-    }
+.footer {
+  @include size(100%, 50px);
+  background-color: $main-color;
+  position: fixed;
+  bottom: 0;
+  @extend %flex-justify-space-between-align-center;
+  &__legalNotice {
+    @extend %move_animation;
+    margin: 5px;
+  }
+  &__contactUs {
+    @extend %move_animation;
+    margin: 5px;
+  }
 }

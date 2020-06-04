@@ -1,36 +1,35 @@
-
-body{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    box-sizing: content-box;
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: content-box;
 }
 
-ul{
-    padding: 0;
+ul {
+  padding: 0;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-span{
-    font-weight: bold;
+span {
+  font-weight: bold;
 }
 
-a{
-    text-decoration: none;
-    text-transform: none;
-    cursor: pointer;
-    color:unset;
+a {
+  text-decoration: none;
+  text-transform: none;
+  cursor: pointer;
+  color: unset;
 }
 
-.fa-music{
-    color: unset;
-    background-image: linear-gradient(to right, $color-menu-chic, #FF9800);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    @include forMobile{
-        display: none;
-    }
+.fa-music {
+  color: unset;
+  background-image: linear-gradient(to right, $color-menu-chic, #ff9800);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  @include forMobile {
+    display: none;
+  }
 }

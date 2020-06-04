@@ -1,58 +1,61 @@
-.container{
-    @extend %flex-justify-center;
-    .container__menuChic{
-        @include stylePages__menu;
-        background-color:$bg-menu-chic;
-        font-family: 'Times New Roman', Times, sans-serif;
-        
-        h2{
-            font-size: map-get($font-size, headingChic);
-            font-family: 'Croissant One', cursive;
-            background:linear-gradient(to right, $color-menu-chic, #673AB7);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-        }
+.container {
+  @extend %flex-justify-center;
+  .container__menuChic {
+    @include stylePages__menu;
+    background-color: $bg-menu-chic;
+    font-family: "Times New Roman", Times, sans-serif;
 
-        .title{
-           @extend %flex-justify-space-between-align-center;
-            .img-title{
-                @include size(30%, 25px);
-            }
-        }
-        .first-heading, .first-block{
-          color:$color-menu-chic-1;
-        }
-        .first-heading{
-            &::after{
-                @extend %border-bottom-animation;
-                border-bottom: 2px solid $color-menu-chic-1;
-            }
-        }
-        .second-heading, .second-block{
-            color: $color-menu-chic-2;
-        }
-        .second-heading{
-            &::after{
-                @extend %border-bottom-animation;
-                border-bottom: 2px solid $color-menu-chic-2;
-            }
-        }
-        .third-heading, .third-block{
-            color: $color-menu-chic-3;
-        }
-        .third-heading{
-            &::after{
-                @extend %border-bottom-animation;
-                border-bottom: 2px solid $color-menu-chic-3;
-            }
-        }
-        li{
-            @extend %flex-justify-space-between-align-center;
-            @include forTablet{
-                display: block;
-                text-align: center;
-                @include size(100%, auto); 
-            }
-        }
+    h2 {
+      font-size: map-get($font-size, headingChic);
+      font-family: "Croissant One", cursive;
+      background: linear-gradient(to right, $color-menu-chic, #673ab7);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
     }
+
+    .title {
+      @extend %flex-justify-space-between-align-center;
+      .img-title {
+        @include size(30%, 25px);
+      }
+    }
+    .first-heading,
+    .first-block {
+      color: $color-menu-chic-1;
+    }
+    .first-heading {
+      &::after {
+        @extend %border-bottom-animation;
+        border-bottom: 2px solid $color-menu-chic-1;
+      }
+    }
+    .second-heading,
+    .second-block {
+      color: $color-menu-chic-2;
+    }
+    .second-heading {
+      &::after {
+        @extend %border-bottom-animation;
+        border-bottom: 2px solid $color-menu-chic-2;
+      }
+    }
+    .third-heading,
+    .third-block {
+      color: $color-menu-chic-3;
+    }
+    .third-heading {
+      &::after {
+        @extend %border-bottom-animation;
+        border-bottom: 2px solid $color-menu-chic-3;
+      }
+    }
+    li {
+      @extend %flex-justify-space-between-align-center;
+      @include forTablet {
+        display: block;
+        text-align: center;
+        @include size(100%, auto);
+      }
+    }
+  }
 }

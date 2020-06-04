@@ -1,54 +1,61 @@
-.container{
-    @extend %flex-justify-center;
-    &__menuPapilles{ // STYLE MENU DELICES DES PAPILLES
-        @include stylePages__menu;
-        background-color:$bg-menu-papilles;
-        h2{
-            font-size: 4em;
-            color: $color-menu-papilles;
-            font-family: 'Dancing Script', cursive;
-            background:linear-gradient(to right, $color-menu-papilles, $color-menu-papilles-2);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            @include forMobile{
-                font-size: 2em;
-            }
-        }
-        .title{
-            @extend %flex-justify-space-between-align-center;
-            .img-title{
-                @include size(30%, 25px);
-            }
-        }
-        .heading-three-papilles-1, .heading-three-papilles-2, .heading-three-papilles-3{
-            font-family: 'Kalam', cursive;
-            &::after{
-                @extend %border-bottom-animation; 
-            }
-        }
-        .heading-three-papilles-1{
-            &::after{
-                border-bottom: 2px solid $color-menu-papilles;
-            }
-        }
-        .heading-three-papilles-2{
-            &::after{
-                border-bottom: 2px solid $color-menu-papilles-1;
-            }
-        }
-        .heading-three-papilles-3{
-            &::after{
-                border-bottom: 2px solid $color-menu-papilles-2;
-            }
-        }
-        li{
-            @extend %flex-justify-space-between-align-center;
-            font-family: 'Kalam', cursive;
-            @include forTablet{
-                display: block;
-                text-align: center;
-                @include size(100%, auto);
-            }
-        }
+.container {
+  @extend %flex-justify-center;
+  &__menuPapilles {
+    // STYLE MENU DELICES DES PAPILLES
+    @include stylePages__menu;
+    background-color: $bg-menu-papilles;
+    h2 {
+      font-size: 4em;
+      color: $color-menu-papilles;
+      font-family: "Dancing Script", cursive;
+      background: linear-gradient(
+        to right,
+        $color-menu-papilles,
+        $color-menu-papilles-2
+      );
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      @include forMobile {
+        font-size: 2em;
+      }
     }
+    .title {
+      @extend %flex-justify-space-between-align-center;
+      .img-title {
+        @include size(30%, 25px);
+      }
+    }
+    .heading-three-papilles-1,
+    .heading-three-papilles-2,
+    .heading-three-papilles-3 {
+      font-family: "Kalam", cursive;
+      &::after {
+        @extend %border-bottom-animation;
+      }
+    }
+    .heading-three-papilles-1 {
+      &::after {
+        border-bottom: 2px solid $color-menu-papilles;
+      }
+    }
+    .heading-three-papilles-2 {
+      &::after {
+        border-bottom: 2px solid $color-menu-papilles-1;
+      }
+    }
+    .heading-three-papilles-3 {
+      &::after {
+        border-bottom: 2px solid $color-menu-papilles-2;
+      }
+    }
+    li {
+      @extend %flex-justify-space-between-align-center;
+      font-family: "Kalam", cursive;
+      @include forTablet {
+        display: block;
+        text-align: center;
+        @include size(100%, auto);
+      }
+    }
+  }
 }

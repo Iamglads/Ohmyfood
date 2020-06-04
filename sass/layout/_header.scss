@@ -1,11 +1,11 @@
-header{
-    @include size(100%, 100px);
-    background-color: $main-color;
-   @extend %flex-justify-align-center;
-    margin-bottom: 20px;
-    & h1{
-        font-size: 2em;
-        color: $second-color;
-        cursor: pointer;
-    }
+header {
+  @include size(100%, 100px);
+  background-color: $main-color;
+  @extend %flex-justify-align-center;
+  margin-bottom: 20px;
+  & h1 {
+    font-size: 2em;
+    color: $second-color;
+    cursor: pointer;
+  }
 }
