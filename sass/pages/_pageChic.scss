@@ -16,7 +16,7 @@
     .title {
       @extend %flex-justify-space-between-align-center;
       .img-title {
-        @include size(30%, 15px);
+        @include size(30%, 10px);
       }
     }
     .first-heading,
