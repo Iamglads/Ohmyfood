@@ -113,9 +113,9 @@ a {
   }
 }
 .section__soon .animation__point-one {
-  animation: one 1000ms ease-in 100ms infinite;
-  -webkit-animation: one 1000ms ease-in 100ms infinite;
-  -moz-animation: one 1000ms ease-in 100ms infinite;
+  animation: one 1000ms ease-in 200ms infinite;
+  -webkit-animation: one 1000ms ease-in 200ms infinite;
+  -moz-animation: one 1000ms ease-in 200ms infinite;
 }
 
 @keyframes one {
@@ -502,7 +502,7 @@ header h1 {
 }
 .container__menuPalette .title .img-title {
   width: 30%;
-  height: 25px;
+  height: 10px;
 }
 .container__menuPalette .heading-three-palette {
   font-family: "Kalam", cursive;
