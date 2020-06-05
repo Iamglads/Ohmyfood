@@ -219,7 +219,7 @@ header h1 {
 .section__menu--chic p {
   font-size: 0.8em;
   font-family: "Croissant One", cursive;
-  background: linear-gradient(to right, #c86817, #673AB7);
+  background: linear-gradient(to right, #c86817, #673ab7);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -256,7 +256,7 @@ header h1 {
 }
 .section__menu--palette p {
   font-family: "Kaushan Script", cursive;
-  background: linear-gradient(to right, #4caf50, #C8E6C9);
+  background: linear-gradient(to right, #4caf50, #c8e6c9);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -317,7 +317,7 @@ header h1 {
 }
 .container .container__menuChic .title .img-title {
   width: 30%;
-  height: 25px;
+  height: 15px;
 }
 .container .container__menuChic .first-heading,
 .container .container__menuChic .first-block {
@@ -383,7 +383,7 @@ header h1 {
 }
 .container__menuEnchantee .title .img-title {
   width: 30%;
-  height: 25px;
+  height: 30px;
 }
 .container__menuEnchantee .heading-three {
   font-family: "Kalam", cursive;
@@ -444,7 +444,7 @@ header h1 {
 }
 .container__menuPapilles .title .img-title {
   width: 30%;
-  height: 25px;
+  height: 8px;
 }
 .container__menuPapilles .heading-three-papilles-1,
 .container__menuPapilles .heading-three-papilles-2,
